@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+   font-weight: 400;
+}
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+   font-weight: 500;
+}
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+   font-weight: 700;
+}
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-ExtraBold.ttf") format("truetype");
+   font-weight: 800;
+}
+@font-face {
+   font-family: "Poppins";
+   src: url("./assets/fonts/Poppins/Poppins-Black.ttf") format("truetype");
+   font-weight: 900;
+}
+
+* {
+   margin: 0 0;
+   font-family: Poppins;
+}
+body {
+   color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+   -moz-appearance: textfield;
+}

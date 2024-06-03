@@ -1,0 +1,59 @@
+.App {
+   width: 350px;
+   height: 600px;
+   max-width: 350px;
+   max-height: 600px;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+.tokens-list::-webkit-scrollbar {
+   width: 5px;
+}
+
+/* Track */
+.tokens-list::-webkit-scrollbar-track {
+   background: #f1f1f1;
+   border-radius: 20px;
+}
+
+/* Handle */
+.tokens-list::-webkit-scrollbar-thumb {
+   background: #00de45;
+   border-radius: 20px;
+}
+
+/* Handle on hover */
+.tokens-list::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+   width: 50px;
+   padding: 8px;
+   aspect-ratio: 1;
+   border-radius: 50%;
+   background: #00de45;
+   --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+   -webkit-mask: var(--_m);
+   mask: var(--_m);
+   -webkit-mask-composite: source-out;
+   mask-composite: subtract;
+   animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+   to {
+      transform: rotate(1turn);
+   }
+}
+
+.currency-selector {
+   height: 48px;
+   transition: all 0.3s ease-in-out;
+}
+
+.currency-selector.open {
+   height: 400px;
+}
